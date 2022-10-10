@@ -4,8 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: blue; */
-  margin: 0 40px;
+  margin: 0 100px;
 `;
 
 export const UserName = styled.span`
@@ -14,13 +13,13 @@ export const UserName = styled.span`
   text-align: center;
 `;
 
+export const RestLife = styled.span`
+  font-size: 50px;
+  padding: 20px 0;
+`;
+
 export const BattleChoiceImg = styled.img`
   width: 200px;
   height: 200px;
-  margin: 30px;
-`;
-
-export const RestLife = styled.span`
-  font-size: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
 `;

@@ -9,6 +9,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
   ],
   rules: {
+    "no-unused-expressions": "off",
     "consistent-return": "off",
     "jsx-a11y/label-has-associated-control": [
       "error",

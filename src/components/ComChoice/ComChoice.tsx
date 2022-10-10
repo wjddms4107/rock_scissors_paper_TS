@@ -4,16 +4,18 @@ import * as Styled from "./ComChoice.style";
 
 type Props = {
   comChoice: string;
+  comScore: number;
+  youScore: number;
 };
 
-function ComChoice({ comChoice }: Props) {
+function ComChoice({ comChoice, comScore, youScore }: Props) {
   const choiceComBattleImg = () => {
     switch (comChoice) {
-      case "✌🏻가위✌🏻":
+      case "가위":
         return Scissors;
-      case "✊🏻주먹✊🏻":
+      case "바위":
         return Rock;
-      case "🖐🏻보🖐🏻":
+      case "보":
         return Paper;
       default:
         return Question;
@@ -21,9 +23,9 @@ function ComChoice({ comChoice }: Props) {
   };
   return (
     <Styled.Container>
-      <Styled.ComName>COMPUTER</Styled.ComName>
+      <Styled.ComName>computer</Styled.ComName>
+      <Styled.RestLife>{3 - youScore}</Styled.RestLife>
       <Styled.BattleChoiceImg src={choiceComBattleImg()} alt="무엇을 냈나요?" />
-      <Styled.RestLife>목숨 3개 남았습니다.</Styled.RestLife>
       <Styled.ComChoice>{comChoice}</Styled.ComChoice>
     </Styled.Container>
   );

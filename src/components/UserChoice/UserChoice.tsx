@@ -6,16 +6,18 @@ import * as Styled from "./UserChoice.style";
 type Props = {
   youChoice: string;
   setYouChoice: React.Dispatch<React.SetStateAction<string>>;
+  youScore: number;
+  comScore: number;
 };
 
-function UserChoice({ youChoice, setYouChoice }: Props) {
+function UserChoice({ youChoice, setYouChoice, youScore, comScore }: Props) {
   const choiceYouBattleImg = () => {
     switch (youChoice) {
-      case "✌🏻":
+      case "가위":
         return Scissors;
-      case "✊🏻":
+      case "바위":
         return Rock;
-      case "🖐🏻":
+      case "보":
         return Paper;
       default:
         return Question;
@@ -24,9 +26,9 @@ function UserChoice({ youChoice, setYouChoice }: Props) {
 
   return (
     <Styled.Container>
-      <Styled.UserName>USER</Styled.UserName>
+      <Styled.UserName>user</Styled.UserName>
+      <Styled.RestLife>{3 - comScore}</Styled.RestLife>
       <Styled.BattleChoiceImg src={choiceYouBattleImg()} alt="무엇을 냈나요?" />
-      <Styled.RestLife>목숨 3개 남았습니다.</Styled.RestLife>
       <UserChoiceButton setYouChoice={setYouChoice} />
     </Styled.Container>
   );

@@ -14,21 +14,21 @@ function UserChoiceButton({ setYouChoice }: Props) {
     <Styled.Container>
       <Styled.UserChoiceButton
         type="button"
-        value="✌🏻"
+        value="가위"
         onClick={(e) => handleClick(e)}
       >
         ✌🏻
       </Styled.UserChoiceButton>
       <Styled.UserChoiceButton
         type="button"
-        value="✊🏻"
+        value="바위"
         onClick={(e) => handleClick(e)}
       >
         ✊🏻
       </Styled.UserChoiceButton>
       <Styled.UserChoiceButton
         type="button"
-        value="🖐🏻"
+        value="보"
         onClick={(e) => handleClick(e)}
       >
         🖐🏻
