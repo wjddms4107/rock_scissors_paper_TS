@@ -162,7 +162,6 @@ function App() {
         <UserChoice
           youChoice={youChoice}
           setYouChoice={setYouChoice}
-          youScore={youScore}
           comScore={comScore}
         />
 
@@ -171,11 +170,7 @@ function App() {
           {battleState === "게임시작 🕹" ? "VS" : count}
         </Styled.Count>
 
-        <ComChoice
-          comChoice={comChoice}
-          comScore={comScore}
-          youScore={youScore}
-        />
+        <ComChoice comChoice={comChoice} youScore={youScore} />
       </Styled.BattleInfo>
 
       <Styled.GameButton background={battleState} onClick={clickBattleButton}>

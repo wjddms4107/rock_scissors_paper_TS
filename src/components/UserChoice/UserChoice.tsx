@@ -6,11 +6,10 @@ import * as Styled from "./UserChoice.style";
 type Props = {
   youChoice: string;
   setYouChoice: React.Dispatch<React.SetStateAction<string>>;
-  youScore: number;
   comScore: number;
 };
 
-function UserChoice({ youChoice, setYouChoice, youScore, comScore }: Props) {
+function UserChoice({ youChoice, setYouChoice, comScore }: Props) {
   const choiceYouBattleImg = () => {
     switch (youChoice) {
       case "가위":

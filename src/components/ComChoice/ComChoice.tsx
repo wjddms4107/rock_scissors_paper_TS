@@ -4,11 +4,10 @@ import * as Styled from "./ComChoice.style";
 
 type Props = {
   comChoice: string;
-  comScore: number;
   youScore: number;
 };
 
-function ComChoice({ comChoice, comScore, youScore }: Props) {
+function ComChoice({ comChoice, youScore }: Props) {
   const choiceComBattleImg = () => {
     switch (comChoice) {
       case "가위":

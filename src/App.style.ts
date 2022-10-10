@@ -9,6 +9,7 @@ export const Container = styled.main`
 export const BattleRoundInfo = styled.div`
   margin: 100px 0 60px;
   font-size: 30px;
+  font-weight: bolder;
 `;
 
 export const BattleInfo = styled.section`
@@ -26,7 +27,7 @@ export const ScoreLine = styled.span`
 
 export const Count = styled.span`
   padding-top: 220px;
-  font-size: 30px;
+  font-size: 35px;
 `;
 
 export const GameButton = styled.button<{ background: string }>`
