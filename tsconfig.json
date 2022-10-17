@@ -10,9 +10,6 @@
       "~/*": [
         "./*"
       ],
-      // "@images/*": [
-      //   "./assets/images/*"
-      // ],
       "@components/*": [
         "./components/*"
       ],

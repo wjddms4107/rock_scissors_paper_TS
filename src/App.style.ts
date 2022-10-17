@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
+export const Container = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,14 +15,6 @@ export const BattleRoundInfo = styled.div`
 export const BattleInfo = styled.section`
   display: flex;
   gap: 10px;
-`;
-
-export const ScoreLine = styled.span`
-  position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
 `;
 
 export const Count = styled.span`
@@ -44,7 +36,7 @@ export const GameButton = styled.button<{ background: string }>`
     props.background === "초기화"
       ? "0 8px 0 rgb(230, 0, 0), 0 15px 20px rgba(0, 0, 0, 0.35)"
       : "0 8px 0 rgb(210, 077, 117), 0 15px 20px rgba(0, 0, 0, 0.35)"};
-  transition: 0.4s all ease-in;
+  transition: 0.2s all ease-in;
   :active {
     padding-top: 10px;
     transform: translate(0, 4px);

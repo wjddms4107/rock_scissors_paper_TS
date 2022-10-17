@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 100px;
 `;
 
-export const UserName = styled.span`
+export const UserName = styled.h1`
   width: 150px;
   font-size: 30px;
   text-align: center;

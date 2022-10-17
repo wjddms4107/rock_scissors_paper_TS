@@ -1,8 +1,8 @@
 import React, { useState, useCallback, useEffect } from "react";
 import * as Styled from "./App.style";
 import { UserChoice, ComChoice, BattleResult } from "./components";
-import useInterval from "./hooks/useInterval";
-import useTimeout from "./hooks/useTimeout";
+import { useInterval } from "./hooks/useInterval";
+import { useTimeout } from "./hooks/useTimeout";
 
 export type ChoiceType = {
   youChoice: string;
@@ -104,7 +104,7 @@ function App() {
       const chioces = ["가위", "바위", "보"];
       setComChoice(chioces[Math.floor(Math.random() * 3)]);
     },
-    battleState === "한판 더!" ? 4000 : null // "재대결하기"면 실행 시작
+    battleState === "한판 더!" ? 4000 : null // "한판 더!"면 실행 시작
   );
 
   useEffect(() => {
@@ -129,7 +129,7 @@ function App() {
     }
 
     (count === "Draw" || "Lose" || "Win") && setResult(getResult());
-  }, [youScore, comScore, count]);
+  }, [youScore, youScore, count]);
 
   const clickBattleButton = () => {
     if (battleState === "한판 더!") {
@@ -165,7 +165,6 @@ function App() {
           comScore={comScore}
         />
 
-        <Styled.ScoreLine>:</Styled.ScoreLine>
         <Styled.Count>
           {battleState === "게임시작 🕹" ? "VS" : count}
         </Styled.Count>
