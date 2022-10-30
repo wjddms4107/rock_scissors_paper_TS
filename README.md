@@ -2,8 +2,8 @@
 > react,typescript,styled-component로 만든 가위바위보 게임 </br>
 https://rock-scissors-paper-ts.netlify.app/
 
+https://user-images.githubusercontent.com/78889402/198872322-5ef68c8a-bbcb-4678-b91d-da696263fb19.mov
 
-https://user-images.githubusercontent.com/78889402/198872268-5c7757f9-29e2-40d5-bab9-4e57b3feba93.mov
 
 
 
