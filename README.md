@@ -2,6 +2,11 @@
 > react,typescript,styled-component로 만든 가위바위보 게임 </br>
 https://rock-scissors-paper-ts.netlify.app/
 
+
+https://user-images.githubusercontent.com/78889402/198872268-5c7757f9-29e2-40d5-bab9-4e57b3feba93.mov
+
+
+
 ## 1. 제작 기간
 -  2022년 10월 9일(일) ~ 2022년 10월 10일(월) : 총 2일
 
